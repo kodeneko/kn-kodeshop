@@ -2,22 +2,22 @@
 
 /* Bold */
 
-.font-bold-huge {
+@define-mixin font-bold-huge {
   font-weight: bold;
   font-size: $sp-8;
 }
 
-.font-bold-subtitle {
+@define-mixin font-bold-subtitle {
   font-weight: bold;
   font-size: $sp-7;
 }
 
-.font-bold-sectitle {
+@define-mixin font-bold-sectitle {
   font-weight: bold;
   font-size: $sp-5;
 }
 
-.font-bold-normal {
+@define-mixin font-bold-normal {
   font-weight: bold;
   font-size: $sp-4;
 }
@@ -25,12 +25,12 @@
 
 /* Regular */
 
-.font-reg-sectitle {
+@define-mixin font-reg-sectitle {
   font-weight: bold;
   font-size: $sp-5;
 }
 
-.font-reg-normal {
+@define-mixin font-reg-normal {
   font-weight: bold;
   font-size: $sp-4;
 }
