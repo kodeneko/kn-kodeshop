@@ -40,6 +40,4 @@ const iconSet = {
   shoopingbag: faBagShopping
 }
 
-type iconSetKeys = keyof typeof iconSet;
-
-export { iconSet, type iconSetKeys }
+export { iconSet }
