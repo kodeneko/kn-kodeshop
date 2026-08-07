@@ -8,12 +8,9 @@ const meta: Meta<typeof Badge> = {
   tags: ["autodocs"],
 };
 
-
 export default meta;
 
-
 type Story = StoryObj<typeof Badge>;
-
 
 export const Positive: Story = {
   args:{

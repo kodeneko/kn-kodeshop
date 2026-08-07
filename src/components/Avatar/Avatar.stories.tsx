@@ -3,7 +3,6 @@ import '../../styles/global.css';
 import Avatar from "./Avatar";
 import { iconSet } from "../../icons/icons";
 
-
 const meta: Meta<typeof Avatar> = {
   title: "Components/Avatar",
   component: Avatar,
@@ -17,12 +16,9 @@ const meta: Meta<typeof Avatar> = {
   },
 };
 
-
 export default meta;
 
-
 type Story = StoryObj<typeof Avatar>;
-
 
 export const Positive: Story = {
   args:{
