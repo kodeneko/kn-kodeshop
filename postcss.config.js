@@ -1,11 +1,12 @@
 export default {
   plugins: {
+    "postcss-import": {},
+    "postcss-normalize": {},
+    "postcss-simple-vars": {},
+    "postcss-nesting": {},
+    'postcss-mixins': {},
     autoprefixer: {},
     cssnano: {},
-    "postcss-nesting": {},
-    "postcss-simple-vars": {},
-    "postcss-normalize": {},
-    "postcss-import": {},
     "postcss-functions": {
       functions: {
         pxToRem: (val, base = 16, scale = 1) => {
