@@ -1,0 +1,36 @@
+@import '../tokens/primitive/';
+
+/* Bold */
+
+.font-bold-huge {
+  font-weight: bold;
+  font-size: $sp-8;
+}
+
+.font-bold-subtitle {
+  font-weight: bold;
+  font-size: $sp-7;
+}
+
+.font-bold-sectitle {
+  font-weight: bold;
+  font-size: $sp-5;
+}
+
+.font-bold-normal {
+  font-weight: bold;
+  font-size: $sp-4;
+}
+
+
+/* Regular */
+
+.font-reg-sectitle {
+  font-weight: bold;
+  font-size: $sp-5;
+}
+
+.font-reg-normal {
+  font-weight: bold;
+  font-size: $sp-4;
+}
