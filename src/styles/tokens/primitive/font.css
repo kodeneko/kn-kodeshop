@@ -1,0 +1,8 @@
+@import "./const.css";  
+  
+$font-sm: pxToRem(10px, $base-size, $scale-factor);
+$font-md: pxToRem(16px, $base-size, $scale-factor);
+$font-lg: pxToRem(22px, $base-size, $scale-factor);
+$font-xl: pxToRem(38px, $base-size, $scale-factor);
+$font-xxl: pxToRem(44px, $base-size, $scale-factor);
+

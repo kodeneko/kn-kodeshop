@@ -1,0 +1,6 @@
+@import "./const.css";  
+  
+$icon-xs: pxToRem(12px, $base-size, $scale-factor);
+$icon-sm: pxToRem(24px, $base-size, $scale-factor);
+$icon-md: pxToRem(36px, $base-size, $scale-factor);
+$icon-lg: pxToRem(48px, $base-size, $scale-factor);

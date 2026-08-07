@@ -1,0 +1,7 @@
+@import "./const.css";  
+  
+$rad-none: pxToRem(0px, $base-size, $scale-factor);
+$rad-sm: pxToRem(8px, $base-size, $scale-factor);
+$rad-md: pxToRem(16px, $base-size, $scale-factor);
+$rad-lg: pxToRem(32px, $base-size, $scale-factor);
+$rad-xl: pxToRem(64px, $base-size, $scale-factor);

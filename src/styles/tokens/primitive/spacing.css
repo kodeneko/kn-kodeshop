@@ -1,0 +1,13 @@
+@import "./const.css";
+
+$sp-0: pxToRem(0px, $base-size, $scale-factor);
+$sp-1: pxToRem(4px, $base-size, $scale-factor);
+$sp-2: pxToRem(8px, $base-size, $scale-factor);
+$sp-3: pxToRem(12px, $base-size, $scale-factor);
+$sp-4: pxToRem(16px, $base-size, $scale-factor);
+$sp-5: pxToRem(20px, $base-size, $scale-factor);
+$sp-6: pxToRem(24px, $base-size, $scale-factor);
+$sp-7: pxToRem(32px, $base-size, $scale-factor);
+$sp-8: pxToRem(40px, $base-size, $scale-factor);
+$sp-9: pxToRem(48px, $base-size, $scale-factor);
+$sp-10: pxToRem(64px, $base-size, $scale-factor);

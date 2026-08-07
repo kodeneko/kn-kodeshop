@@ -1,0 +1,6 @@
+@import "../primitive/colors.css";  
+  
+$back-default: $color-neutral-0;
+$back-surface: $color-neutral-100;
+$back-active: $color-main-100;
+$back-main: $color-main-500;

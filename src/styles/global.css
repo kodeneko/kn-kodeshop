@@ -1,0 +1,13 @@
+@import './tokens/primitive/index.css';
+@import './tokens/semantic/index.css';
+
+:root {
+  font-size: $base-size;
+
+
+}
+
+.test {
+  color: $color-main-300;
+  font-size: $font-xxl;
+}

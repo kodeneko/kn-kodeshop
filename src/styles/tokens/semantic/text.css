@@ -1,0 +1,6 @@
+@import "../primitive/colors.css";  
+  
+$text-default: $color-neutral-900;
+$text-second: $color-neutral-600;
+$text-active: $color-main-500;
+$text-main: $color-neutral-0;
