@@ -26,11 +26,11 @@
 /* Regular */
 
 @define-mixin font-reg-sectitle {
-  font-weight: bold;
+  font-weight: normal;
   font-size: $sp-5;
 }
 
 @define-mixin font-reg-normal {
-  font-weight: bold;
+  font-weight: normal;
   font-size: $sp-4;
 }
