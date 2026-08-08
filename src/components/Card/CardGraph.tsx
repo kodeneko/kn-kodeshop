@@ -1,38 +1,28 @@
 import React from 'react';
-import type { CardProps } from './Card.types';
+import type { CardGraphProps } from './Card.types';
 import styles from './Card.module.css';
-import Avatar from '../Avatar/Avatar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { iconSet } from '../../icons/icons';
+import CardDefault from './CardDefault';
+import graphPic from '../../assets/graphic.png';
 
-const Card: React.FC<CardProps> = ({
+const CardGraphic: React.FC<CardGraphProps> = ({
   pic,
   title,
   onClickMenu,
-  opts,
-  body,
-  footer,
+  opts
 }) => {
 
-  const handleClickMenu = () => {
-    onClickMenu();
-  };
-
   return (
-    <div className={styles.cont}>
-      <div className={styles.header}>
-        <Avatar pic={pic} />
-        <h3 className={styles.title}>{title}</h3>
-        <FontAwesomeIcon
-          className={styles.opt}
-          icon={iconSet.menuH}
-          onClick={handleClickMenu}
-        ></FontAwesomeIcon>
-      </div>
-      <div className={styles.body}>{body}</div>
-      <div className={styles.footer}>{footer}</div>
-    </div>
+    <CardDefault
+      pic={pic}
+      title={title}
+      onClickMenu={onClickMenu}
+      opts={opts}
+
+      body={<img className={styles.graph} src={graphPic}></img>}
+      footer={<></>}
+    >
+    </CardDefault>
   )
 }
 
-export default Card;
+export default CardGraphic;
