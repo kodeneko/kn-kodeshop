@@ -38,6 +38,7 @@ $size-opt: $sp-9;
   &.activate {
     border-radius: $rad-opt;
     background: $color-back-opt-selected;
+    box-shadow: $shadow-light;
   }
 
   &.deactivate {

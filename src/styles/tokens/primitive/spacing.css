@@ -1,6 +1,7 @@
 @import "./const.css";
 
 $sp-0: pxToRem(0px, $base-size, $scale-factor);
+$sp-xxxs: pxToRem(2px, $base-size, $scale-factor);
 $sp-1: pxToRem(4px, $base-size, $scale-factor);
 $sp-2: pxToRem(8px, $base-size, $scale-factor);
 $sp-3: pxToRem(12px, $base-size, $scale-factor);
