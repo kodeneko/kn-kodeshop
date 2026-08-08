@@ -1,0 +1,53 @@
+@import '../../styles/global.css';
+
+$color-back: $back-surface;
+$rad: $rad-lg;
+$padding: $sp-5;
+$spacing: $sp-7;
+
+$spacing-info: $sp-2;
+$spacing-opts: $sp-4;
+
+$color-text-name: $text-default;
+$color-text-role: $text-second;
+
+$color-pic: $text-second;
+$size-pic: $icon-sm;
+
+.cont {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing;
+  padding: $padding;
+  background: $color-back;
+  border-radius: $rad;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing-info;
+
+  .name {
+    color: $color-text-name;
+  }
+
+  .role {
+    color: $color-text-role;
+  }
+}
+
+.opts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing-opts;
+
+  .op {
+    font-size: $size-pic;
+    color: $color-pic;
+  }
+}
