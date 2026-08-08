@@ -1,0 +1,40 @@
+@import '../../styles/global.css';
+
+$back: none;
+$back-active: $back-active;
+$spacing: $sp-2;
+$padding: $sp-3;
+
+$size-pic: $icon-sm;
+$color-pic: $text-second;
+$color-pic-active: $text-active;
+$color-label: $text-second;
+$color-label-active: $text-active;
+
+.cont {
+  background: $back;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing;
+  padding: $padding;
+
+  .pic {
+    font-size: $size-pic;
+    color: $color-pic;
+  }
+
+  .label {
+    flex-grow: 1;
+    @mixin font-bold-sectitle;
+    color: $color-label;
+  }
+}
+
+.cont.active {
+  background: $back-active;
+
+  .pic, .label {
+    color: $color-pic-active;
+  }
+}
