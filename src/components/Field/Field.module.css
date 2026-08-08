@@ -1,0 +1,35 @@
+@import '../../styles/global.css';
+
+$color-back: $back-surface;
+$color-icon: $text-second;
+$color-text: $text-second;
+$padding-field: $sp-5;
+$spacing-field-elements: $padding-field;
+$size-icon: $icon-sm;
+$rad: $rad-lg;
+
+.cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing-field-elements;
+
+  padding: $padding-field;
+  border-radius: $rad;
+
+  background: $color-back;
+}
+
+.icon {
+  color: $color-icon;
+  font-size: $size-icon;
+}
+
+.input {
+  @mixin font-reg-normal;
+  color: $color-text;
+  width: 100%;
+
+  border: none;
+  background: none;
+}
