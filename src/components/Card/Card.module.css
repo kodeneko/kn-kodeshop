@@ -17,7 +17,7 @@ $color-text-body: $text-default;
 $color-text-footer: $text-second;
 
 /* Qty */
-$back-qty: $back-default;
+$spacing-qty-footer: $sp-4;
 
 /* Graph */
 $back-qty: $back-default;
@@ -65,12 +65,17 @@ $back-qty: $back-default;
 
 /* Qty Card */
 
-.contQty {
+.qtyBody {
+  @mixin font-bold-huge;
+}
 
+.qtyFooter {
+  display: flex;
+  gap: $spacing-qty-footer;
 }
 
 
-/* Default Graph */
+/* Graph Card */
 
 .contGraph {
 

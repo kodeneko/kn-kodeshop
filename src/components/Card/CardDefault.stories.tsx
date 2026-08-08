@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from 'storybook/test';
 import '../../styles/global.css';
-import Card from "./Card";
+import CardDefault from "./CardDefault";
 import Wrapper from "../../stories/Wrapper/Wrapper";
 import { iconSet } from "../../icons/icons";
 
-const meta: Meta<typeof Card> = {
-  title: "Components/Card/Base",
-  component: Card,
+const meta: Meta<typeof CardDefault> = {
+  title: "Components/Card/Default",
+  component: CardDefault,
   tags: ["autodocs"],
 
   argTypes: {
@@ -28,7 +28,7 @@ const meta: Meta<typeof Card> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Card>;
+type Story = StoryObj<typeof CardDefault>;
 
 const BodyDefault = () => <p>I'm a body</p>
 const FooterDefault = () => <p>I'm a footer</p>
