@@ -1,0 +1,46 @@
+@import '../../styles/global.css';
+
+$color-back: $back-surface;
+$color-pic: $text-second;
+$rad: $rad-lg;
+$padding: $sp-2;
+$spacing: $sp-2; 
+$size-opt: $icon-sm;
+$color-back-opt: none;
+$color-back-opt-selected: $back-default;
+$rad-opt: 50%;
+$size-opt: $sp-9;
+
+.cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $spacing;
+  padding: $padding;
+  width: fit-content;
+  background: $color-back;
+  border-radius: $rad;
+  cursor: pointer;
+}
+
+.sw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $size-opt;
+  width: $size-opt;
+
+  .icon {
+    color: $color-pic;
+    font-size: $icon-sm;
+  }
+
+  &.activate {
+    border-radius: $rad-opt;
+    background: $color-back-opt-selected;
+  }
+
+  &.deactivate {
+    background: $color-back-opt;
+  }
+}
