@@ -1,0 +1,11 @@
+@import '../../styles/global.css';
+
+$color-back: $back-surface;
+$padding: $sp-5;
+$rad: $rad-lg;
+
+.cont {
+  background: $color-back;
+  padding: $padding;
+  border-radius: $rad;
+}
