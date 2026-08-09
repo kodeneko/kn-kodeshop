@@ -69,7 +69,7 @@ $spacing-opt: $sp-0;
 
 .cont {
   width: $width-menu;
-  min-height: 100vh;
+  height: 100%;
   box-sizing: border-box;
 
   background: $back-menu;

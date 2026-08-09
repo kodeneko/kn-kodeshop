@@ -1,16 +1,21 @@
+@import '../../styles/global.css';
+
 $spacing-corner: $sp-6;
+$size-search: pxToRem(368px, $base-size, $scale-factor);
 
 .cont {
   display: flex;
   align-items: center;
 }
 
-.cont.main {
-  flex-grow: 1;
+.cont .main {
+  flex-basis: $size-search;
 }
 
-.cont.corner {
+.cont .corner {
+  flex-grow: 1;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: $spacing-corner;
 }

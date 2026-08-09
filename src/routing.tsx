@@ -1,12 +1,12 @@
 import { Navigate } from 'react-router-dom';
-import PublicTemplate from './templates/public/Public.template';
 import DashboardPage from './pages/dashboard/Dashboard.page';
 import OrdersPage from './pages/orders/Orders.page';
+import PrivateTemplate from './templates/private/Private.template';
 
 export const routes = [
   {
     path: '/',
-    element: <PublicTemplate />,
+    element: <PrivateTemplate />,
     children: [
       {
         index: true,

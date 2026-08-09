@@ -3,11 +3,10 @@ import { useTranslation } from 'react-i18next';
 import styles from './TopBar.module.css';
 import Field from '../field/Field';
 import UserBar from '../user-bar/UserBar';
-import type { TopBarProps } from './TopBar.style';
 import Switch from '../switch/Switch';
 import { userBarOpts } from '../../global';
 
-const TopBar: React.FC<TopBarProps> = () => {
+const TopBar: React.FC = () => {
   const [search, setSearch] = useState<string>('');
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [username] = useState<string>('Sonia G.');
@@ -40,8 +39,8 @@ const TopBar: React.FC<TopBarProps> = () => {
       </div>
       <div className={styles.corner}>
         <Switch
-          picLeft=''
-          picRight=''
+          picLeft='moon'
+          picRight='sun'
           val={theme === 'dark'}
           onClick={handleTheme}
         >

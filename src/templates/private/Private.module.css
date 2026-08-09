@@ -1,1 +1,28 @@
+@import '../../styles/global.css';
 
+$padding: $sp-7;
+$spacing: $sp-7;
+$spacing-cont: $sp-7; 
+
+.mainCont {
+  display: flex;
+  gap: $spacing;
+  padding: $padding;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.cont {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-cont;
+}
+
+.cont.bar {
+  width: 100%;
+}
+
+.cont.page {
+  padding: 
+}
