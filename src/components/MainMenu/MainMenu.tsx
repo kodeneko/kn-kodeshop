@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { MainMenuOptObj, MainMenuOptProps, MainMenuProps } from './MainMenu.types';
+import type { MainMenuOptProps, MainMenuProps } from './MainMenu.types';
 import styles from './MainMenu.module.css';
 import MainMenuOpt from './MainMenuOpt';
 
@@ -14,27 +14,15 @@ const MainTitle: React.FC = () => {
   )
 }
 
-function completedMainMenu(menu: MainMenuOptObj[]) {
-  const menuXtra: MainMenuOptProps[] = menu.map(opt => ({
-    id: opt.id,
-    pic: opt.pic,
-    label: opt.id,
-    active: false,
-    onClick: () => {}
-  }));
+const MainMenu: React.FC<MainMenuProps> = ({ options, onClick }) => {
 
-  return menuXtra;
-}
-
-const MainMenu: React.FC<MainMenuProps> = ({ options }) => {
-
-  const [mainMenuXtra, setMainMenuXtra] = useState(completedMainMenu(options));
+  const [mainMenuXtra, setMainMenuXtra] = useState(options);
 
   const handleClickOpt = (op: MainMenuOptProps) => {
     const newMainMenu = mainMenuXtra.map(opx =>
       ({ ...opx, active: opx.id === op.id })
     );
-    op.onClick();
+    onClick(op);
     setMainMenuXtra(newMainMenu);
   }
 
@@ -43,7 +31,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ options }) => {
       <MainTitle></MainTitle>
       <ul className={styles.menu}>
         {mainMenuXtra.map(op =>
-          <li key={op.id}>
+          <li key={op.id} data-testid={`main-menu-opt-${op.id}`}>
             <MainMenuOpt
               id={op.id}
               pic={op.pic}

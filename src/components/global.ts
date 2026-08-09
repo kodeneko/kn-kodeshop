@@ -1,26 +1,26 @@
-import type { MainMenuOpt } from "./MainMenu/MainMenu.types"
+import type { MainMenuOptInfo } from "./MainMenu/MainMenu.types"
 
-const mainMenuOptDashboard: MainMenuOpt = {
+const mainMenuOptDashboard: MainMenuOptInfo = {
   id: 'dashboard',
   pic: 'sqrs'
 };
-const mainMenuOptOrders: MainMenuOpt = {
+const mainMenuOptOrders: MainMenuOptInfo = {
   id: 'orders',
   pic: 'package'
 };
-const mainMenuOptProducts: MainMenuOpt = {
+const mainMenuOptProducts: MainMenuOptInfo = {
   id: 'products',
   pic: 'tshirt'
 };
-const mainMenuOptCustomers: MainMenuOpt = {
+const mainMenuOptCustomers: MainMenuOptInfo = {
   id: 'customers',
   pic: 'userGroup'
 };
-const mainMenuOptReports: MainMenuOpt = {
+const mainMenuOptReports: MainMenuOptInfo = {
   id: 'reports',
   pic: 'file'
 };
-const mainMenuOptConfig: MainMenuOpt = {
+const mainMenuOptConfig: MainMenuOptInfo = {
   id: 'config',
   pic: 'tools'
 };
