@@ -1,3 +1,15 @@
 {
-  "search-placeholder": "Search orders, products or customers"
+  "search-placeholder": "Search orders, products or customers",
+  "title": {
+    "dashboard": "Dashboard",
+    "orders": "Orders"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "products": "Products",
+    "customers": "Customers",
+    "reports": "Reports",
+    "config": "Config"
+  }
 }
