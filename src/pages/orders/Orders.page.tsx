@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import Section from '../../components/section/Section';
+import Section from '../../components/section/Section.tsx';
 
 const OrdersPage = () => {
   const { t } = useTranslation();

@@ -1,2 +1,2 @@
-export * from './Private.template';
-export * from './Public.template';
+export * from './private/Private.template.tsx';
+export * from './public/Public.template.tsx';

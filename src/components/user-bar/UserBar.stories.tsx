@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from 'storybook/test';
 import '../../styles/global.css';
-import UserBar from "./UserBar";
-import { userBarOpts } from "../../global";
+import UserBar from "./UserBar.tsx";
+import { userBarOpts } from "../../global.ts";
 
 const meta: Meta<typeof UserBar> = {
   title: "Components/UserBar",

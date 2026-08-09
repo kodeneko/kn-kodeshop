@@ -1,6 +1,6 @@
-import CardGraphic from '../../components/card/CardGraph';
-import CardQty from '../../components/card/CardQty';
-import Section from '../../components/section/Section';
+import CardGraphic from '../../components/card/CardGraph.tsx';
+import CardQty from '../../components/card/CardQty.tsx';
+import Section from '../../components/section/Section.tsx';
 import { useTranslation } from 'react-i18next';
 import styles from './Dashboard.module.css';
 

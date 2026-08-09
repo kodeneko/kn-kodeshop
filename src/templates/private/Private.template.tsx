@@ -1,8 +1,8 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 import styles from './Private.module.css';
-import MainMenu from '../../components/main-menu/MainMenu';
-import { mainMenuOpts } from '../../global';
-import TopBar from '../../components/top-bar/TopBar';
+import MainMenu from '../../components/main-menu/MainMenu.tsx';
+import { mainMenuOpts } from '../../global.ts';
+import TopBar from '../../components/top-bar/TopBar.tsx';
 import type { MainMenuOptInfo, MainMenuOptProps } from '../../components';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';

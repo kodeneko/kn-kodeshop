@@ -1,7 +1,7 @@
 import React from 'react';
 import type { CardDefaultProps } from './Card.types';
 import styles from './Card.module.css';
-import Avatar from '../avatar/Avatar';
+import Avatar from '../avatar/Avatar.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { iconSet } from '../../icons';
 

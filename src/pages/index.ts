@@ -1,1 +1,1 @@
-export * from './dashboard/Dashboard.page';
+export * from './dashboard/Dashboard.page.tsx';

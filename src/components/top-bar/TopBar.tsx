@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './TopBar.module.css';
-import Field from '../field/Field';
-import UserBar from '../user-bar/UserBar';
-import Switch from '../switch/Switch';
-import { userBarOpts } from '../../global';
+import Field from '../field/Field.tsx';
+import UserBar from '../user-bar/UserBar.tsx';
+import Switch from '../sswitch/Switch.tsx';
+import { userBarOpts } from '../../global.ts';
 
 const TopBar: React.FC = () => {
   const [search, setSearch] = useState<string>('');

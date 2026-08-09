@@ -1,1 +1,1 @@
-export * from './Public.template';
+export * from './Public.template.tsx';

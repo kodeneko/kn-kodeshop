@@ -1,7 +1,7 @@
 import React from 'react';
 import type { CardGraphProps } from './Card.types';
 import styles from './Card.module.css';
-import CardDefault from './CardDefault';
+import CardDefault from './CardDefault.tsx';
 import graphPic from '../../assets/graphic.png';
 
 const CardGraphic: React.FC<CardGraphProps> = ({

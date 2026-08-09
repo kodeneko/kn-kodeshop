@@ -1,5 +1,5 @@
 import { BrowserRouter, useRoutes } from 'react-router-dom';
-import { routes } from './routing';
+import { routes } from './routing.tsx';
 import './i18n';
 import './styles/global.css';
 

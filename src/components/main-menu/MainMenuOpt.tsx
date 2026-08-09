@@ -3,7 +3,7 @@ import type { MainMenuOptProps } from './MainMenu.types';
 import styles from './MainMenu.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { iconSet } from '../../icons';
-import Badge from '../badge/Badge';
+import Badge from '../badge/Badge.tsx';
 import clsx from 'clsx';
 
 const MainMenuOpt: React.FC<MainMenuOptProps> = ({ 

@@ -1,1 +1,1 @@
-export * from './Private.template';
+export * from './Private.template.tsx';

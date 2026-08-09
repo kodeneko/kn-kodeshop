@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn, userEvent, within } from "storybook/test";
 import '../../styles/global.css';
-import MainMenu from "./MainMenu";
-import { mainMenuOpts } from "../../global";
+import MainMenu from "./MainMenu.tsx";
+import { mainMenuOpts } from "../../global.ts";
 
 const meta: Meta<typeof MainMenu> = {
   title: "Components/MainMenu/Menu",

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from 'storybook/test';
 import '../../styles/global.css';
-import CardDefault from "./CardDefault";
-import Wrapper from "../../stories/Wrapper/Wrapper";
+import CardDefault from "./CardDefault.tsx";
+import Wrapper from "../../stories/Wrapper/Wrapper.tsx";
 import { iconSet } from "../../icons";
 
 const meta: Meta<typeof CardDefault> = {

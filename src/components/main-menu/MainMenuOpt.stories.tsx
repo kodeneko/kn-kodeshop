@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "storybook/test";
 import '../../styles/global.css';
-import MainMenuOpt from "./MainMenuOpt";
+import MainMenuOpt from "./MainMenuOpt.tsx";
 import { iconSet } from "../../icons";
 
 const meta: Meta<typeof MainMenuOpt> = {

@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom';
-import DashboardPage from './pages/dashboard/Dashboard.page';
-import OrdersPage from './pages/orders/Orders.page';
-import PrivateTemplate from './templates/private/Private.template';
+import DashboardPage from './pages/dashboard/Dashboard.page.tsx';
+import OrdersPage from './pages/orders/Orders.page.tsx';
+import PrivateTemplate from './templates/private/Private.template.tsx';
 
 export const routes = [
   {

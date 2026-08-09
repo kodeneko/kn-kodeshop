@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { MainMenuOptProps, MainMenuProps } from './MainMenu.types';
 import styles from './MainMenu.module.css';
-import MainMenuOpt from './MainMenuOpt';
+import MainMenuOpt from './MainMenuOpt.tsx';
 
 const MainTitle: React.FC = () => {
   return (
