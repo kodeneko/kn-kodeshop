@@ -15,14 +15,13 @@ const MainTitle: React.FC = () => {
 }
 
 const MainMenu: React.FC<MainMenuProps> = ({ options, onClick }) => {
-
   const [mainMenuXtra, setMainMenuXtra] = useState(options);
 
   const handleClickOpt = (op: MainMenuOptProps) => {
     const newMainMenu = mainMenuXtra.map(opx =>
       ({ ...opx, active: opx.id === op.id })
     );
-    onClick(op);
+    if(onClick) onClick(op);
     setMainMenuXtra(newMainMenu);
   }
 
@@ -36,6 +35,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ options, onClick }) => {
               id={op.id}
               pic={op.pic}
               label={op.label}
+              path={op.path}
               active={op.active}
               badge={op?.badge || undefined}
               onClick={() => handleClickOpt(op)}

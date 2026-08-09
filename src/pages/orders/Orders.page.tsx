@@ -1,8 +1,12 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
+import Section from '../../components/section/Section';
 
 const OrdersPage = () => {
+  const { t } = useTranslation();
   return (
-    <div>Orders Page</div>
+    <Section title={t('title.orders')}>
+      This is the orders page
+    </Section>
   )
 };
 

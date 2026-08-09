@@ -1,21 +1,26 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import styles from './Private.module.css';
 import MainMenu from '../../components/main-menu/MainMenu';
 import { mainMenuOpts } from '../../global';
 import TopBar from '../../components/top-bar/TopBar';
 import type { MainMenuOptInfo, MainMenuOptProps } from '../../components';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-function parseMainMenuOptInfoToProps(menu: MainMenuOptInfo[]) {
-  return menu.map((op, i) => ({
-    ...op,
-    label: op.id,
-    active: i === 0,
-    onClick: () => { }
-  }))
-}
 
 const PrivateTemplate = () => {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const parseMainMenuOptInfoToProps = (menu: MainMenuOptInfo[]) => {
+    return menu.map((op, i) => ({
+      ...op,
+      label: t(`menu.${op.id}`),
+      active: i === 0,
+      onClick: () => { }
+    }));
+  }
+  
   const [options, setOptions] = useState<MainMenuOptProps[]>(
     parseMainMenuOptInfoToProps(mainMenuOpts)
   );
@@ -26,6 +31,7 @@ const PrivateTemplate = () => {
       active: optSel.id === opt.id
     }));
     setOptions(optionsAux);
+    navigate(optSel.path)
   };
 
   return (

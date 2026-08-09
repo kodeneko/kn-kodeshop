@@ -1,8 +1,12 @@
-import React from 'react';
+import Section from '../../components/section/Section';
+import { useTranslation } from 'react-i18next';
 
 const DashboardPage = () => {
+  const { t } = useTranslation();
   return (
-    <div>Dashboard Page</div>
+    <Section title={t('title.dashboard')}>
+      This is the dashboard page
+    </Section>
   )
 };
 

@@ -2,12 +2,13 @@ type MainMenuOptObj = {
   id: string,
   pic: string,
   label: string,
+  path: string,
   active: boolean,
   badge?: number,
   onClick: () => void
 }
 
-type MainMenuOptInfo = Pick<MainMenuOptObj, 'id' | 'pic'>;
+type MainMenuOptInfo = Pick<MainMenuOptObj, 'id' | 'pic' | 'path'>;
 
 type MainMenuOptProps = MainMenuOptObj;
 
