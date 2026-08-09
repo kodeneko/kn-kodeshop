@@ -18,5 +18,5 @@ $back: $back-surface;
 .top .title {
   margin: 0;
   padding: 0;
-  @import font-bold-sectitle;
+  @mixin font-bold-sectitle;
 }

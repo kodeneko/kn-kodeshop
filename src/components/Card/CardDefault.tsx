@@ -9,7 +9,7 @@ const CardDefault: React.FC<CardDefaultProps> = ({
   pic,
   title,
   onClickMenu,
-  opts,
+  // opts,
   body,
   footer,
 }) => {

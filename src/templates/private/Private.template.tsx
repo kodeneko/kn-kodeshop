@@ -26,7 +26,7 @@ const PrivateTemplate = () => {
   );
 
   const handleClickMenu = (optSel: MainMenuOptProps) => {
-    const optionsAux = options.map((opt, i) => ({
+    const optionsAux = options.map(opt => ({
       ...opt,
       active: optSel.id === opt.id
     }));
