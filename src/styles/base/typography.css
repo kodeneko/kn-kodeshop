@@ -1,23 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../tokens/primitive/const.css';
 @import '../tokens/primitive/index.css';
 
 /* Bold */
 
 @define-mixin font-bold-huge {
+  font-family: $base-font;
   font-weight: bold;
   font-size: $sp-8;
 }
 
 @define-mixin font-bold-subtitle {
+  font-family: $base-font;
   font-weight: bold;
   font-size: $sp-7;
 }
 
 @define-mixin font-bold-sectitle {
+  font-family: $base-font;
   font-weight: bold;
   font-size: $sp-5;
 }
 
 @define-mixin font-bold-normal {
+  font-family: $base-font;
   font-weight: bold;
   font-size: $sp-4;
 }
@@ -26,11 +32,13 @@
 /* Regular */
 
 @define-mixin font-reg-sectitle {
+  font-family: $base-font;
   font-weight: normal;
   font-size: $sp-5;
 }
 
 @define-mixin font-reg-normal {
+  font-family: $base-font;
   font-weight: normal;
   font-size: $sp-4;
 }
