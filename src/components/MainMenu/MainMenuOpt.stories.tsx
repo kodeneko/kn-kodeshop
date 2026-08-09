@@ -5,11 +5,12 @@ import MainMenuOpt from "./MainMenuOpt";
 import { iconSet } from "../../icons/icons";
 
 const meta: Meta<typeof MainMenuOpt> = {
-  title: "Components/MainMenu",
+  title: "Components/MainMenu/Opt",
   component: MainMenuOpt,
   tags: ["autodocs"],
   
-  args:{
+  args: {
+    id: 'dashbard',
     pic: 'sqrs',
     label: 'Dashboard',
     active: false,

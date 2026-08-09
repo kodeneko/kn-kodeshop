@@ -13,7 +13,7 @@ import {
   faRightFromBracket,
   faEllipsis,
   faEllipsisVertical,
-  faScrewdriver,
+  faScrewdriverWrench,
   faCoins,
   faBagShopping
 } from "@fortawesome/free-solid-svg-icons";
@@ -35,7 +35,7 @@ const iconSet = {
   goout: faRightFromBracket,
   menuH: faEllipsis,
   menuV: faEllipsisVertical,
-  tools: faScrewdriver,
+  tools: faScrewdriverWrench,
   coins: faCoins,
   shoopingbag: faBagShopping
 }

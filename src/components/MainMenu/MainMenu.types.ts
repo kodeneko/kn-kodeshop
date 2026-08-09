@@ -1,13 +1,21 @@
-type MainMenuOptProps = {
+type MainMenuOptObj = {
+  id: string,
   pic: string,
-  label: string;
+}
+
+type MainMenuOptProps = MainMenuOptObj & {
+  label: string,
   active: boolean,
   badge?: number,
-  onClick: () => {}
+  onClick: () => void
 }
 
 type MainMenuProps = {
-  options: MainMenuOptProps[],
+  options: MainMenuOptObj[],
 }
 
-export type { MainMenuOptProps, MainMenuProps };
+export type {
+  MainMenuOptObj,
+  MainMenuOptProps,
+  MainMenuProps
+};

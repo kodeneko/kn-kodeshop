@@ -1,40 +1,103 @@
 @import '../../styles/global.css';
 
-$back: none;
-$back-active: $back-active;
-$spacing: $sp-2;
-$padding: $sp-3;
+/* MainMenuOpt Vars */
 
-$size-pic: $icon-sm;
-$color-pic: $text-second;
-$color-pic-active: $text-active;
-$color-label: $text-second;
-$color-label-active: $text-active;
+$back-opt: none;
+$back-active-opt: $back-active;
+$spacing-opt: $sp-2;
+$padding-opt: $sp-3;
 
-.cont {
-  background: $back;
+$size-pic-opt: $icon-sm;
+$color-pic-opt: $text-second;
+$color-pic-opt-active: $text-active;
+$color-label-opt: $text-second;
+$color-label-opt-active: $text-active;
+
+/* MainMenu Vars */
+
+$width-menu: 362px;
+$back-menu: $back-surface;
+$rad-menu: $rad-md;
+$spacing-menu: $sp-7;
+$padding-menu: $sp-5;
+$color-title: $text-default;
+$color-title-strong: $text-active;
+$spacing-opt: $sp-0;
+
+
+/* MainMenuOpt */
+
+.contOpt {
+  background: $back-opt;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: $spacing;
-  padding: $padding;
+  gap: $spacing-opt;
+  padding: $padding-opt;
+  cursor: pointer;
 
-  .pic {
-    font-size: $size-pic;
-    color: $color-pic;
+  .picCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: $sp-8;
+    width: $sp-8;
+  }
+
+  .picCont .pic {
+    font-size: $size-pic-opt;
+    color: $color-pic-opt;
   }
 
   .label {
     flex-grow: 1;
-    @mixin font-bold-sectitle;
-    color: $color-label;
+    @mixin font-reg-sectitle;
+    color: $color-label-opt;
   }
 }
 
-.cont.active {
-  background: $back-active;
+.contOpt.active, .contOpt:hover {
+  background: $back-active-opt;
 
   .pic, .label {
-    color: $color-pic-active;
+    color: $color-pic-opt-active;
   }
+}
+
+/* MainMenu */
+
+.cont {
+  width: $width-menu;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background: $back-menu;
+  border-radius: $rad-menu;
+
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-menu;
+  padding: $padding-menu;
+}
+
+.title {
+  color: $color-title;
+  padding: 0 $padding-opt;
+  @mixin font-bold-huge;
+
+  .strong {
+    color: $color-title-strong;
+  }
+}
+
+.cont .menu {
+  flex-grow: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-opt;
 }

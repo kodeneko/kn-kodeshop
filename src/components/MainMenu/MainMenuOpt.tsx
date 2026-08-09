@@ -13,17 +13,19 @@ const MainMenuOpt: React.FC<MainMenuOptProps> = ({
   badge,
   onClick
 }) => {
-  const styleOpt = clsx(styles.cont, active && styles.active)
+  const styleOpt = clsx(styles.contOpt, active && styles.active)
   return (
     <div
       className={styleOpt}
       onClick={onClick}
     >
-      <FontAwesomeIcon
-        className={styles.pic}
-        icon={iconSet[pic as keyof typeof iconSet]}
-      >
-      </FontAwesomeIcon>
+      <div className={styles.picCont}>
+        <FontAwesomeIcon
+          className={styles.pic}
+          icon={iconSet[pic as keyof typeof iconSet]}
+        >
+        </FontAwesomeIcon>
+      </div>
       <div className={styles.label}>{label}</div>
       {!!badge && <Badge val={badge as number} />}
     </div>
