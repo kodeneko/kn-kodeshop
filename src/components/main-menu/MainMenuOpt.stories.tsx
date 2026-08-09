@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "storybook/test";
 import '../../styles/global.css';
 import MainMenuOpt from "./MainMenuOpt";
-import { iconSet } from "../../icons/icons";
+import { iconSet } from "../../icons";
 
 const meta: Meta<typeof MainMenuOpt> = {
   title: "Components/MainMenu/Opt",

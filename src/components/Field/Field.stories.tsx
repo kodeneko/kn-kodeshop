@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import '../../styles/global.css';
 import Field from "./Field";
-import { iconSet } from "../../icons/icons";
+import { iconSet } from "../../icons";
 
 const meta: Meta<typeof Field> = {
   title: "Components/Field",

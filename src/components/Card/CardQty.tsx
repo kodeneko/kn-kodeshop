@@ -2,7 +2,7 @@ import React from 'react';
 import type { CardQtyProps, CardQtyBodyProps, CardQtyFooterProps } from './Card.types';
 import styles from './Card.module.css';
 import CardDefault from './CardDefault';
-import Tag from '../Tag/Tag';
+import Tag from '../tag/Tag';
 
 const CardQtyBody: React.FC<CardQtyBodyProps> = ({ label }) => (
   <div className={styles.qtyBody}>

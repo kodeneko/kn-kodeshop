@@ -2,8 +2,8 @@ import React from 'react';
 import type { MainMenuOptProps } from './MainMenu.types';
 import styles from './MainMenu.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { iconSet } from '../../icons/icons';
-import Badge from '../Badge/Badge';
+import { iconSet } from '../../icons';
+import Badge from '../badge/Badge';
 import clsx from 'clsx';
 
 const MainMenuOpt: React.FC<MainMenuOptProps> = ({ 

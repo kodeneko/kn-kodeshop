@@ -1,4 +1,4 @@
-import type { MainMenuOptInfo } from "./MainMenu/MainMenu.types"
+import type { MainMenuOptInfo } from "./components/main-menu/MainMenu.types"
 
 const mainMenuOptDashboard: MainMenuOptInfo = {
   id: 'dashboard',

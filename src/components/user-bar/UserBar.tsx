@@ -2,7 +2,7 @@ import React from 'react';
 import type { UserBarProps } from './UserBar.types';
 import styles from './UserBar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { iconSet } from '../../icons/icons';
+import { iconSet } from '../../icons';
 
 const UserBar: React.FC<UserBarProps> = ({ username, role, opts }) => {
   return (

@@ -1,6 +1,6 @@
 import type React from "react";
-import type { AvatarProps } from "../Avatar/Avatar.types";
-import type { TagProps } from "../Tag/Tag.types";
+import type { AvatarProps } from "../avatar/Avatar.types";
+import type { TagProps } from "../tag/Tag.types";
 
 type CardDefaultOptsProps = {
   id: string,

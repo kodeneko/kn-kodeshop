@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import type { SwitchProps } from './Switch.types';
 import styles from './Switch.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { iconSet } from '../../icons/icons';
+import { iconSet } from '../../icons';
 import clsx from 'clsx';
 
 const Switch: React.FC<SwitchProps> = ({ 

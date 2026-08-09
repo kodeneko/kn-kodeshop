@@ -3,7 +3,7 @@ import { fn } from 'storybook/test';
 import '../../styles/global.css';
 import CardGraph from "./CardGraph";
 import Wrapper from "../../stories/Wrapper/Wrapper";
-import { iconSet } from "../../icons/icons";
+import { iconSet } from "../../icons";
 
 const meta: Meta<typeof CardGraph> = {
   title: "Components/Card/Graph",

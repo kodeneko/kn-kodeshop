@@ -2,7 +2,7 @@ import React from 'react';
 import type { AvatarProps } from './Avatar.types';
 import styles from './Avatar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { iconSet } from '../../icons/icons';
+import { iconSet } from '../../icons';
 
 const Avatar: React.FC<AvatarProps> = ({ pic }) => {
   return (
