@@ -1,6 +1,6 @@
 interface SwitchProps {
   val: boolean;
-  onClick: () => void;
+  onClick: (val: boolean) => void;
   picLeft: string;
   picRight: string;
 }

@@ -23,8 +23,9 @@ const Switch: React.FC<SwitchProps> = ({
   const styleRight = clsx(styles.sw, styleRightState);
 
   const handleClick = () => {
-    setSwState(!swState);
-    onClick();
+    const newState = !swState;
+    setSwState(newState);
+    onClick(newState);
   }
 
   return (

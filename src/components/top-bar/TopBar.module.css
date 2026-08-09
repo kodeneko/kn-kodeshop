@@ -1,0 +1,16 @@
+$spacing-corner: $sp-6;
+
+.cont {
+  display: flex;
+  align-items: center;
+}
+
+.cont.main {
+  flex-grow: 1;
+}
+
+.cont.corner {
+  display: flex;
+  align-items: center;
+  gap: $spacing-corner;
+}

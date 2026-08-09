@@ -1,7 +1,10 @@
 type UserBarOptProps = {
+  id: string,
   pic: string,
-  onClick: () => {},
+  onClick: () => void,
 };
+
+type UserBarOptInfo = Pick<UserBarOptProps, 'id' | 'pic'>;
 
 type UserBarProps = {
   username: string,
@@ -9,4 +12,4 @@ type UserBarProps = {
   opts: UserBarOptProps[]
 }
 
-export type { UserBarOptProps, UserBarProps };
+export type { UserBarOptProps, UserBarOptInfo, UserBarProps };

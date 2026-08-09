@@ -1,3 +1,4 @@
+import type { UserBarOptInfo } from "./components";
 import type { MainMenuOptInfo } from "./components/main-menu/MainMenu.types"
 
 const mainMenuOptDashboard: MainMenuOptInfo = {
@@ -24,7 +25,6 @@ const mainMenuOptConfig: MainMenuOptInfo = {
   id: 'config',
   pic: 'tools'
 };
-
 const mainMenuOpts = [
   mainMenuOptDashboard,
   mainMenuOptOrders,
@@ -34,4 +34,8 @@ const mainMenuOpts = [
   mainMenuOptConfig
 ];
 
-export { mainMenuOpts };
+const userBarOptNoti: UserBarOptInfo = { id: 'noti', pic: 'bell' };
+const userBarOptLogout: UserBarOptInfo = { id: 'logout', pic: 'goout' };
+const userBarOpts = [userBarOptNoti, userBarOptLogout];
+
+export { mainMenuOpts, userBarOpts };

@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from 'storybook/test';
 import '../../styles/global.css';
 import UserBar from "./UserBar";
+import { userBarOpts } from "../../global";
 
 const meta: Meta<typeof UserBar> = {
   title: "Components/UserBar",
@@ -17,10 +18,7 @@ export const Default: Story = {
   args:{
     username: 'Sonia G.',
     role: 'Admin',
-    opts: [
-      { pic: 'bell', onClick: fn() },
-      { pic: 'goout', onClick: fn() }
-    ]
+    opts: userBarOpts.map(opt => ({...opt, onClick: fn()})) 
   }
 };
 

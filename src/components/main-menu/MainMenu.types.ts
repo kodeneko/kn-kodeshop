@@ -13,7 +13,7 @@ type MainMenuOptProps = MainMenuOptObj;
 
 type MainMenuProps = {
   options: MainMenuOptObj[],
-  onClick: (opt: MainMenuOptProps) => void
+  onClick?: (opt: MainMenuOptProps) => void
 }
 
 export type {
