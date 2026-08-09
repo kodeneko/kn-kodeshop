@@ -3,12 +3,16 @@
 @import './base/index.css';
 @import './tokens/index.css';
 
+$color-back-main: $text-default;
+$color-text-main: $color-neutral-0;
+
 :root {
+  color: $color-back-main;
+  background: $color-text-main;
+
   font-size: $base-size;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
 
-.test {
-  color: $color-main-300;
-  font-size: $font-xxl;
+  padding: 0;
+  margin: 0;
 }
