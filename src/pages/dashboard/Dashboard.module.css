@@ -1,0 +1,16 @@
+@import '../../styles/global.css';
+
+$spacing-col: $sp-5;
+$spacing-row: $sp-5;
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-col;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: $spacing-row;
+}

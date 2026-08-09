@@ -5,11 +5,13 @@ $spacing: $sp-7;
 $spacing-cont: $sp-7; 
 
 .mainCont {
+  width: 1440px;
   display: flex;
   gap: $spacing;
   padding: $padding;
   box-sizing: border-box;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 .cont {

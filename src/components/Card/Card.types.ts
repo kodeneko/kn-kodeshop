@@ -10,7 +10,7 @@ type CardDefaultOptsProps = {
 type CardDefaultProps = {
   pic: AvatarProps['pic'],
   title: string,
-  onClickMenu: () => {},
+  onClickMenu: () => void,
   opts: CardDefaultOptsProps[],
   body: React.ReactNode,
   footer: React.ReactNode

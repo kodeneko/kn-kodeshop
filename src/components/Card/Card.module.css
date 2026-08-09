@@ -26,6 +26,7 @@ $back-qty: $back-default;
 /* Default Card */
 
 .cont {
+  width: 100%;
   background-color: $back;
   display: flex;
   flex-direction: column;
