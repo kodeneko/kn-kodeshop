@@ -1,0 +1,84 @@
+@import '../../styles/global.css';
+
+/* Variables */
+
+/* Default */
+$back: $back-default;
+$color-text: $text-default;
+$padding: $sp-6;
+$spacing: $sp-6;
+$rad: $rad-md;
+
+$spacing-header: $sp-4;
+$spacing-header-left: $sp-4;
+$color-opt-header: $color-text;
+$size-opt-header: $icon-sm;
+$color-text-body: $text-default;
+$color-text-footer: $text-second;
+
+/* Qty */
+$spacing-qty-footer: $sp-4;
+
+/* Graph */
+$back-qty: $back-default;
+
+
+/* Default Card */
+
+.cont {
+  width: 100%;
+  background-color: $back;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+  padding: $padding;
+  border-radius: $rad;
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $spacing-header;
+  }
+
+  .header .title {
+    flex-grow: 1;
+    color: $color-text;
+    @mixin font-bold-sectitle;
+  }
+
+  .header .opt {
+    color: $color-opt-header;
+    font-size: $size-opt-header;
+  }
+
+  .body {
+    color: $color-text-body;
+    @mixin font-reg-normal;
+  }
+
+  .footer {
+    color: $color-text-footer;
+    @mixin font-reg-normal;
+  }
+}
+
+
+/* Qty Card */
+
+.qtyBody {
+  @mixin font-bold-huge;
+}
+
+.qtyFooter {
+  display: flex;
+  gap: $spacing-qty-footer;
+}
+
+
+/* Graph Card */
+
+.graph {
+  width: 100%;
+  height: auto;
+}
