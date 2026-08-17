@@ -4,6 +4,7 @@ $spacing: $sp-7;
 $padding: $sp-5;
 $rad: $rad-lg;
 $back: $back-surface;
+$padding-scroll: $sp-3;
 
 .cont {
   display: flex;
@@ -19,4 +20,11 @@ $back: $back-surface;
   margin: 0;
   padding: 0;
   @mixin font-bold-sectitle;
+}
+
+.body {
+  height: calc(100vh - 160px);
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding-right: $padding-scroll;
 }
