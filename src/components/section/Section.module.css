@@ -28,7 +28,6 @@ $rad-bar: $rad-sm;
 }
 
 .body {
-  height: calc(100vh - 160px);
   overflow-y: scroll;
   box-sizing: border-box;
   padding-right: $padding-scroll;
