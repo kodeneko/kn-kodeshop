@@ -6,6 +6,11 @@ $rad: $rad-lg;
 $back: $back-surface;
 $padding-scroll: $sp-3;
 
+$color-bar: $text-second;
+$color-bar-hover: $text-default;
+$size-bar: $sp-2;
+$rad-bar: $rad-sm;
+
 .cont {
   display: flex;
   flex-direction: column;
@@ -27,4 +32,21 @@ $padding-scroll: $sp-3;
   overflow-y: scroll;
   box-sizing: border-box;
   padding-right: $padding-scroll;
+
+  &::-webkit-scrollbar {
+    width: $size-bar;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-bar;
+    border-radius: $rad-bar;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color-bar-hover;
+  }
 }
